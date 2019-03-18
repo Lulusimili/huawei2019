@@ -24,11 +24,13 @@ def carLoading(car_path):
 
 
 
-def outputs(carList):
+def outputs(carID_data, carRouteDict, carTimeDict, filePath):
     """
     输出路线txt文档
     :param carList:
     :return:
     """
+    #(carID, time, rtList)
+
     pass
 

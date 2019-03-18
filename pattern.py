@@ -4,7 +4,6 @@ import os
 
 
 
-
 class Car(object):
     # (id,from,to,speed,planTime)
     def __init__(self, car_dataArray):
@@ -13,6 +12,12 @@ class Car(object):
         self.des        = car_dataArray[2]
         self.speed      = car_dataArray[3]
         self.planTime   = car_dataArray[4]
+
+    def getRoute(self, rtList):
+        self.route = rtList
+
+    def calcuMaxTime(self, distance):
+        self.minTime = distance / self.speed
 
 class Cross(object):
     # (id,roadId,roadId,roadId,roadId)
